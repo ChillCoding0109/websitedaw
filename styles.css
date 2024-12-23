@@ -1,0 +1,103 @@
+body::before {
+    content: "";
+    background-image: url(history.jpg);
+    background-size: cover;
+    filter: blur(8px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+header{
+    background-color: beige;
+    color: black;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+}
+
+div.logo{
+    float: left;
+    margin: 12px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 100px;
+    text-align: center;
+}
+
+div.login{
+    margin: auto;
+    margin-top: 150px;
+    width: 400px;
+    height: 450px;
+    border: 3px solid black;
+    border-radius: 80px;
+    background-color: beige;
+    text-align: center;
+    box-shadow: 0 0 100px  rgb(43, 118, 69);
+}
+
+div.login div.user{
+    margin-top: 80px;
+}
+
+div.login div.pass{
+    margin-top: 20px;
+}
+
+button.log, button.reg{
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 20px;
+    transition: .5s;
+}
+
+button.log:hover, button.reg:hover{
+    background-color: #555;
+    transform: scale(1.2);
+} 
+
+footer{
+    background-color:beige;
+    color: black;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    header, footer {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    div.login {
+        width: 90%;
+        height: auto;
+        margin-top: 150px;
+        border-radius: 20px;
+    }
+
+    div.logo {
+        width: 40px;
+        height: 40px;
+        margin: 8px;
+    }
+
+    button.log, button.reg {
+        width: 80px;
+        height: 35px;
+        font-size: 16px;
+    }
+}
