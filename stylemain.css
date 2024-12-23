@@ -1,0 +1,42 @@
+body::before {
+    content: "";
+    background-image: url(history.jpg);
+    background-size: cover;
+    filter: blur(8px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+header{
+    background-color: beige;
+    color: black;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+}
+
+main{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 20px;
+    background-color: beige;
+    border-radius: 20px;
+    box-shadow: 0 0 100px  rgb(43, 118, 69);
+}
+
+footer{
+    background-color: beige;
+    color: black;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    text-align: center;
+}
